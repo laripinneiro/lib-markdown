@@ -9,7 +9,7 @@ async function getFile(filepath) {
 	const encoding = "utf-8";
 	try {
 		const text = await fs.promises.readFile(filepath, encoding);
-		console.log(getLinks(text));
+		return getLinks(text);
 	} catch (error) {
 		treatError(error);
 	}
@@ -27,4 +27,4 @@ function getLinks(text) {
 	return textLinks;
 }
 
-getFile("assets/text1.md");
+export default getFile;
