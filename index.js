@@ -24,7 +24,7 @@ function getLinks(text) {
 		textLinks.push({ [temp[1]]: temp[2] });
 	}
 
-	return textLinks;
+	return textLinks.length === 0 ? "Não há links" : textLinks;
 }
 
 export default getFile;
