@@ -2,7 +2,7 @@ import chalk from "chalk";
 import * as fs from "fs";
 
 function treatError(error) {
-	throw new Error(chalk.red(error.code, "Invalid filepath"));
+	throw new Error(chalk.red(error.code, "Invalid file path"));
 }
 
 async function getFile(filepath) {
@@ -24,7 +24,7 @@ function getLinks(text) {
 		textLinks.push({ [temp[1]]: temp[2] });
 	}
 
-	return textLinks.length === 0 ? "Não há links" : textLinks;
+	return textLinks.length === 0 ? "No links" : textLinks;
 }
 
 export default getFile;

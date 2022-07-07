@@ -1,17 +1,34 @@
 {
-	"name": "lib-markdown",
+	"name": "@laripinneiro/lib-markdown",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"cli": "node cli.js ./assets/text1.md"
+	"description": "Validate links in markdown files",
+	"keywords": [
+		"markdown",
+		"URL",
+		"URL Validator",
+		"lib"
+	],
+	"main": "./cli.js",
+	"bin": {
+		"lib-markdown": "./cli.js"
 	},
+	"scripts": {
+		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js ./test/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/laripinneiro/lib-markdown"
+	},
+	"homepage": "https://github.com/laripinneiro/lib-markdown",
 	"author": "Larissa Piñeiro",
 	"license": "ISC",
+	"type": "module",
 	"dependencies": {
 		"chalk": "^5.0.1",
 		"node-fetch": "^3.2.6"
 	},
-	"type": "module"
+	"devDependencies": {
+		"jest": "^28.1.2"
+	}
 }
+
