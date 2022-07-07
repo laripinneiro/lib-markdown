@@ -10,8 +10,8 @@
 	"author": "Larissa Piñeiro",
 	"license": "ISC",
 	"dependencies": {
-		"chalk": "^5.0.1"
+		"chalk": "^5.0.1",
+		"node-fetch": "^3.2.6"
 	},
 	"type": "module"
 }
-
